@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 class DrawTable(models.Model):
     column1 = models.CharField(max_length=250)
-    column2 = models.CharField(max_length=200)
+    column2 = models.CharField(max_length=200,blank=True, null=True)
 
 
 class UserModel(models.Model):
