@@ -18,6 +18,8 @@ django.setup()
 
 from repository.models import DataModel, DrawTable, UserModel
 
+pd.read
+
 data_csv = pd.read_csv("../data/iris.csv")
 data = data_csv.values
 X = data[:, 0:4]

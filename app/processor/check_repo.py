@@ -30,3 +30,4 @@ raw_table = DrawTableRepo()
 data2 = raw_table.get_raw_data()
 for ele in data2:
     print(len(ele))
+

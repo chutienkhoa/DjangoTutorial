@@ -26,3 +26,15 @@ class AccessRecord(models.Model):
 
     def __str__(self):
         return str(self.date)
+
+
+class SircUser(models.Model):
+    id = models.IntegerField(primary_key=True)
+    username = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
+    address = models.CharField(max_length=100)
+
+    def __str__(self):
+        return str(self.username)
+    class Meta:
+        db_table = 'sirc_user'

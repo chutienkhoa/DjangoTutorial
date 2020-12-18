@@ -1,9 +1,8 @@
 import os
-
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings')
 import django
-
 django.setup()
+
 from faker import Faker
 import random
 from app_model.models import Topic, Webpage, AccessRecord
